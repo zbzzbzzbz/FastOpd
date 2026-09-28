@@ -1,0 +1,1 @@
+"""FastOpd teacher components."""

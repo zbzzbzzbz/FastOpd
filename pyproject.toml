@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastopd"
+version = "0.1.0"
+description = "FashionIQ online preference distillation with batched and speculative Qwen3-VL supervision"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "hydra-core",
+  "numpy",
+  "Pillow",
+  "requests",
+  "salesforce-lavis",
+  "torch",
+  "torchvision",
+  "tqdm",
+  "transformers",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["blip2_maxsim*"]
